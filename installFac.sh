@@ -1,6 +1,5 @@
 #!/bin/bash 
 cp note.sh $HOME/.note.sh
 
-cd $HOME;
-echo "alias note='~/.note.sh'" >> .bashrc
+echo "alias note='~/.note.sh'" >> $HOME/.bashrc
 echo "Redémarrer le terminal ^^ "
