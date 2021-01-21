@@ -19,5 +19,6 @@ Utilisation
 note
 ```
 
-Aperçu 
+Aperçu
+
 ![](image/note.png)
