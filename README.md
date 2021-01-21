@@ -18,3 +18,6 @@ Utilisation
 ```BASH
 note
 ```
+
+Aperçu 
+![](image/note.png)
