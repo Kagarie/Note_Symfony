@@ -1,4 +1,10 @@
 #!/bin/bash
+changed=0
+git remote update && git status -uno | grep -q 'Your branch is behind' && changed=1
+if [ $changed = 1 ]; then
+    git pull
+    echo "Mise à jour effectuer, redémarrer le terminal pour prendre en compte la maj";
+fi
 
 #couleur : 
 rouge='\e[0;31m'
