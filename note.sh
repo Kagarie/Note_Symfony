@@ -1,10 +1,4 @@
 #!/bin/bash
-changed=0
-git remote update && git status -uno | grep -q 'Your branch is behind' && changed=1
-if [ $changed = 1 ]; then
-    git pull
-    echo "Mise à jour effectuer, redémarrer le terminal pour prendre en compte la maj";
-fi
 
 #couleur : 
 rouge='\e[0;31m'
@@ -24,10 +18,10 @@ echo -e " "
 #Ajout des composants
 echo -e "${rouge}--------------------- Ajout des composants -------------------"
 echo -e "${neutre}Ajout du profiler et la commande make en dévellopement"
-echo -e "${vert}composr req --dev profiler maker"
+echo -e "${vert}composer req --dev profiler maker"
 echo  " "
-echo -e "${neutre}Ajout de twig, annotations, form, validator, orm"
-echo -e "${vert}composer req twig annotations form validator orm"
+echo -e "${neutre}Ajout de twig, annotations, form, validator, orm et asset"
+echo -e "${vert}composer req twig annotations form validator orm asset"
 echo " "
 
 #Commande liée au serveur symphony
@@ -49,7 +43,7 @@ echo -e "${vert}symfony server:status"
 echo " "
 
 #Bin/console
-echo -e "${rouge}---------------------- Console symfony  --------------------"
+echo -e "${rouge}----------------------- Console symfony  ---------------------"
 echo -e "${neutre}Voir toutes les commandes possible"
 echo -e "${vert}php bin/console"
 echo " "
@@ -64,7 +58,14 @@ echo -e " "
 echo -e "${neutre}Créer un formulaire"
 echo -e "${vert}php bin/console make:form"
 echo " " 
-echo -e "${neutre}Pour génrer automatiquement l'ensemble des méthos pour :"
+echo -e "${neutre}Pour génrer automatiquement l'ensemble des méthodes pour :"
 echo -e "lire, ajouter, supprimet ou editer un objet. Attention méthode bourrin"
 echo -e "${vert}php bin/console make:crud"
 echo " "
+
+#Relation entre entité
+echo -e "${rouge}----------------------- Entité Relation  ---------------------"
+echo -e "${neutre}On choisit l'entité propriétaire et on la modifie"
+echo -e "${vert}bin/console make entity Entite_Proprietaire"
+echo " "
+
