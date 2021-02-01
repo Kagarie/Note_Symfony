@@ -19,6 +19,20 @@ Utilisation
 note
 ```
 
-Aperçu
+Aperçu :
 
 ![](image/note.png)
+
+Ce projet et maintenu à jour jusqu'à la fin du premier semestre 2021. 
+Pour vérifier si votre "clone du dépôt" est à jour procédé comme ceci une fois dans le dossier du dépôt local.
+
+```BASH
+git status 
+```
+
+S'il n'est pas jour vous devrez faire ceci pour le mettre à jour 
+
+```BASH
+git pull
+./installFac.sh
+```
