@@ -3,7 +3,7 @@
 #Variable qui définit le script à prendre en compte
 script='note.sh'
 
-#La varibale script et découpe puis on retire l'extensions
+#On retire l'extension de la varible script
 alias=$(echo $script | cut -f 1 -d .)
 
 #Copie du script dans le home
