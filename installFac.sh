@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-#Variable qui définit le script à prendre en compte
+#Variable qui définit le script a prendre en compte
 script='note.sh'
 
 #On retire l'extension de la varible script
