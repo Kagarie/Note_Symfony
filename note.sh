@@ -69,3 +69,12 @@ echo -e "${neutre}On choisit l'entité propriétaire et on la modifie"
 echo -e "${vert}bin/console make entity Entite_Proprietaire"
 echo " "
 
+#EasyAdmin
+echo -e "${rouge}----------------------- Easy Admin ---------------------------"
+echo -e "${neutre}Creation du bundle"
+echo -e "${vert}bin/console make composer require admin"
+echo -e "${neutre}Creation du tableau de bord"
+echo -e "${vert}bin/console make:admin:dashboard"
+echo -e "${neutre}Définir l'entité à administrer"
+echo -e "${vert}bin/console make:admin:crud"
+echo " "
