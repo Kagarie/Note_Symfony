@@ -9,7 +9,7 @@ alias=$(echo $script | cut -f 1 -d .)
 #Copie du script dans le home
 cp ${script} $HOME/.${script}
 
-if [  $(grep -q "alias ${alias}=" $HOME/.bashrc) ];then
+if [  ! $(grep -q "alias ${alias}=" $HOME/.bashrc) ];then
    #Si l'alias n'est pas present on le construit
    #Puis l'alias est ajoute dans le bashrc
    echo -e "alias ${alias}='~/.${script}'" >> $HOME/.bashrc
